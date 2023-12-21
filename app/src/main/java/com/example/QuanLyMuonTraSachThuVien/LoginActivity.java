@@ -72,7 +72,8 @@ public void checkLogin(){
         strPass=edPassword.getText().toString();
         if (strUser.isEmpty()||strPass.isEmpty()){
         Toast.makeText(getApplicationContext(),"khong duoc de trong",Toast.LENGTH_SHORT).show();
-        }else {
+        }
+        else {
         if (dao.checkLogin(strUser,strPass)>0){
             Toast.makeText(getApplicationContext(),"Login thanh cong",Toast.LENGTH_SHORT).show();
              rememberUser(strUser,strPass,chkRememberPass.isChecked());
