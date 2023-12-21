@@ -13,16 +13,17 @@
         android:layout_gravity="center"
         android:layout_height="200dp"
         app:srcCompat="@drawable/logo1" />
+
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0dp"
         android:text="Quản lý thư viện"
-        android:layout_marginLeft="50dp"
-        android:textSize="30dp"
         android:textAllCaps="true"
-        android:textStyle="italic"
         android:textColor="#FF5722"
-        android:layout_gravity="center"/>
+        android:textSize="30dp"
+        android:textStyle="italic" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"

@@ -61,7 +61,7 @@
                 android:id="@+id/btnSaveUserChange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save"
+                android:text="Lưu"
                 android:backgroundTint="#B1AFAF"
                 android:layout_marginRight="20dp"
                 android:drawableLeft="@drawable/ic_baseline_save_24"
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#B1AFAF"
                 android:drawableLeft="@drawable/ic_baseline_cancel_24"
-                android:text="Cancle"
+                android:text="Thoát"
                 android:textSize="20dp"/>
 
 
