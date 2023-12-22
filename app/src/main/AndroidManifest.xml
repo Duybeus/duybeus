@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuanLySachThuVien">
         <activity
-            android:name="com.example.QuanLyMuonTraSachThuVien.WaitingActivity"
+            android:name="com.example.QuanLyMuonTraSachThuVien.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,11 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.QuanLyMuonTraSachThuVien.LoginActivity"
-            android:exported="true" >
+<!--        <activity-->
+<!--            android:name="com.example.QuanLyMuonTraSachThuVien.LoginActivity"-->
+<!--            android:exported="true" >-->
 
-        </activity>
+<!--        </activity>-->
         <activity
             android:name="com.example.QuanLyMuonTraSachThuVien.MainActivity"
             android:exported="true">

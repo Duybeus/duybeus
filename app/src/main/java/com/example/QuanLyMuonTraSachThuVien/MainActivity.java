@@ -18,13 +18,13 @@ import android.widget.TextView;
 
 import com.example.QuanLyMuonTraSachThuVien.DAO.PhieuMuonDAO;
 import com.example.QuanLyMuonTraSachThuVien.DAO.ThuThuDAO;
-import com.example.QuanLyMuonTraSachThuVien.DoanhThu.DoanhThuFragment;
+
 import com.example.QuanLyMuonTraSachThuVien.DoiMk.DoiMKFragment;
 import com.example.QuanLyMuonTraSachThuVien.LoaiSach.LoaiSachFragment;
 import com.example.QuanLyMuonTraSachThuVien.PhieuMuon.PhieuMuonFragment;
 import com.example.QuanLyMuonTraSachThuVien.Sach.SachFragment;
 import com.example.QuanLyMuonTraSachThuVien.ThanhVien.ThanhVienFragment;
-import com.example.QuanLyMuonTraSachThuVien.chaomung.ChaoMungFragment;
+
 import com.example.QuanLyMuonTraSachThuVien.themUser.ThemUserFragment;
 import com.example.QuanLyMuonTraSachThuVien.topTen.TopTenFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -118,20 +118,7 @@ public class MainActivity extends AppCompatActivity  {
                         manager.beginTransaction()
                                 .replace(R.id.content_fame, thanhVienFragment)
                                 .commit();
-                        break;
-                    case R.id.sub_Top:
-                        setTitle("Top 10 sách mượn nhiều nhất");
-                        TopTenFragment topTenFragment = new TopTenFragment();
-                        manager.beginTransaction()
-                                .replace(R.id.content_fame, topTenFragment)
-                                .commit();
-                        break;
-                    case R.id.sub_DoanhThu:
-                        setTitle("Doanh Thu");
-                        DoanhThuFragment doanhThuFragment = new DoanhThuFragment();
-                        manager.beginTransaction()
-                                .replace(R.id.content_fame, doanhThuFragment)
-                                .commit();
+
                         break;
                     case R.id.sub_ThemUser:
                         setTitle("Quản lý thêm người dùng");
@@ -151,14 +138,8 @@ public class MainActivity extends AppCompatActivity  {
                         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                         finish();
                         break;
-                    case R.id.navcHAO:
-                        setTitle("Chao");
 
-                        ChaoMungFragment chaoMungFragment = new ChaoMungFragment();
-                        manager.beginTransaction()
-                                .replace(R.id.content_fame, chaoMungFragment)
-                                .commit();
-                        break;
+
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return false;
